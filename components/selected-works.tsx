@@ -5,19 +5,19 @@ import { useState } from "react"
 
 const panels = [
   {
-    title: "Supported issuers & asset structures",
-    eyebrow: "STOCK-LINKED TOKENS · ISSUER DISCLOSURES",
-    body: "Understand the issuer, the relationship between each token and its underlying stock, and the rights or restrictions that apply before you interact with an asset.",
+    title: "Stock-linked assets",
+    eyebrow: "UNDERLYING STOCK · TOKEN INFORMATION",
+    body: "Explore verified asset information and understand each token's relationship with its underlying stock before you interact with it.",
   },
   {
-    title: "Distribution & wallet access",
-    eyebrow: "SOLANA WALLETS · ELIGIBLE ASSETS",
-    body: "Connect a compatible Solana wallet when required and review supported asset identifiers, verified records, and availability before taking action.",
+    title: "Solana wallet access",
+    eyebrow: "WALLET AUTHORIZATION · ELIGIBLE ASSETS",
+    body: "Connect a compatible wallet when required to interact with supported assets and inspect available onchain information.",
   },
   {
-    title: "Trading & market routes",
-    eyebrow: "QUOTES · FEES · SLIPPAGE",
-    body: "Explore a clear buy and sell flow that separates the underlying stock reference from any token price, quote, liquidity, fees, and execution status.",
+    title: "Trading information",
+    eyebrow: "QUOTES · LIQUIDITY · FEES · SLIPPAGE",
+    body: "Review quotes, liquidity, fees, slippage, and transaction status before confirming an available trade. Demo orders never execute onchain.",
   },
 ]
 
@@ -30,10 +30,10 @@ export default function SelectedWorks() {
         <div className="mb-16 max-w-5xl">
           <div className="mb-5 flex items-center gap-2">
             <Briefcase className="h-5 w-5 text-accent" strokeWidth={2} />
-            <span className="text-sm font-medium uppercase tracking-[0.14em] text-foreground/70">The logsi market</span>
+            <span className="text-sm font-medium uppercase tracking-[0.14em] text-foreground/70">ONE PLACE TO EXPLORE</span>
           </div>
           <h2 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.05em] text-foreground md:text-7xl lg:text-8xl">
-            Explore, understand, and trade tokenized assets.
+            Explore, understand, and trade supported assets.
           </h2>
         </div>
 

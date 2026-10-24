@@ -36,14 +36,16 @@ export default function TokenizedFeatures() {
           {features.map((feature) => {
             const Icon = feature.icon
             return (
-              <article key={feature.title} className={`group relative min-h-[560px] overflow-hidden rounded-[2rem] p-8 transition-transform duration-500 hover:-translate-y-2 md:p-10 ${feature.className}`}>
-                <Icon className="mb-10 h-8 w-8 text-current" strokeWidth={1.5} />
-                <h3 className="whitespace-pre-line text-3xl font-medium leading-[1.05] tracking-[-0.04em] md:text-4xl">{feature.title}</h3>
-                <p className="mt-8 max-w-sm text-base leading-7 text-current/80">{feature.description}</p>
-                <a href="#about" className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-white/90 transition-colors hover:text-white">
-                  Learn more <ArrowUpRight size={16} />
-                </a>
-                <div aria-hidden="true" className={`pointer-events-none absolute -bottom-2 left-0 right-0 h-56 transition-transform duration-700 group-hover:scale-105 ${feature.art === "dots" ? "feature-dots" : feature.art === "bars" ? "feature-bars" : "feature-squares"}`} />
+              <article key={feature.title} className={`group relative min-h-[600px] overflow-hidden rounded-[2rem] p-8 transition-transform duration-500 hover:-translate-y-2 md:p-10 ${feature.className}`}>
+                <div className="relative z-10 flex h-full flex-col">
+                  <Icon className="mb-10 h-8 w-8 text-current" strokeWidth={1.5} />
+                  <h3 className="max-w-md whitespace-pre-line text-3xl font-medium leading-[1.05] tracking-[-0.04em] md:text-4xl">{feature.title}</h3>
+                  <p className="mt-8 max-w-sm text-base leading-7 text-current/80">{feature.description}</p>
+                  <a href="#about" className="mt-auto inline-flex w-fit items-center gap-2 pt-10 text-sm font-semibold text-white/90 transition-colors hover:text-white">
+                    Learn more <ArrowUpRight size={16} />
+                  </a>
+                </div>
+                <div aria-hidden="true" className={`pointer-events-none absolute -bottom-2 left-0 right-0 z-0 h-56 transition-transform duration-700 group-hover:scale-105 ${feature.art === "dots" ? "feature-dots" : feature.art === "bars" ? "feature-bars" : "feature-squares"}`} />
               </article>
             )
           })}

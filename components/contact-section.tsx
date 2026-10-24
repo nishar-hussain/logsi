@@ -45,10 +45,13 @@ export default function ContactSection() {
           <span className="text-sm font-medium text-foreground/70">Buy and sell</span>
         </div>
 
-        <p className="text-foreground/70 max-w-xl mb-12">
-          Choose a supported tokenized stock, review the current quote, and see the expected output, fees, and slippage
-          before confirming. If the current application is in demo mode, it will be clearly labelled.
-        </p>
+          <p className="text-foreground/70 max-w-xl mb-12">
+            Choose a supported tokenized stock, review the current quote, and see the expected output, fees, and slippage
+            before confirming. If the current application is in demo mode, it will be clearly labelled.
+          </p>
+          <div className="mb-8 inline-flex items-center rounded-full border border-foreground/20 bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70">
+            Demo Trading — orders are simulated and do not execute onchain
+          </div>
 
         {/* Contact Content */}
         <div className="grid lg:grid-cols-2 gap-8">

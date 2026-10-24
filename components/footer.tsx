@@ -15,6 +15,7 @@ export default function Footer() {
             <span>logsi</span>
           </span>
         </Link>
+        <p className="mt-6 max-w-md text-sm leading-6 text-white/60">logsi helps users explore US stock markets and supported stock-linked digital assets through the Solana ecosystem.</p>
 
         <div className="mt-16 flex flex-col gap-6 border-t border-white/20 py-7 text-sm text-white/65 md:mt-24 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3">

@@ -22,11 +22,11 @@ function CompanyIcon({ company }: { company: Company }) {
 
 export default function LogoCloud() {
   const logos: Company[] = [
-    { name: "Apple", ticker: "AAPL", icon: "/images/apple-mark.svg" },
+    { name: "Apple", ticker: "AAPL", icon: "/images/apple-mark-white.svg" },
     { name: "NVIDIA", ticker: "NVDA", icon: "/images/nvidia-logo.jpeg" },
     { name: "Tesla", ticker: "TSLA", icon: "/images/tesla-logo.jpeg" },
     { name: "Microsoft", ticker: "MSFT" },
-    { name: "Amazon", ticker: "AMZN", icon: "/images/amazon-mark.svg" },
+    { name: "Amazon", ticker: "AMZN", icon: "/images/amazon-mark-white.svg" },
     { name: "Alphabet", ticker: "GOOGL", icon: "/images/google-mark.svg" },
   ]
   const marqueeLogos = [...logos, ...logos]

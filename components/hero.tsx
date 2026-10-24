@@ -27,8 +27,9 @@ export default function Hero() {
     <section id="home" className="pt-28 pb-16">
       <div className="px-6 mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
-          {/* Left Content - Title and Button */}
+          {/* Product introduction */}
           <div className="lg:max-w-3xl pt-0">
+            <p className="mb-5 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">US EQUITIES. ONCHAIN ACCESS.</p>
             <h1 className="leading-tight text-balance text-left font-sans font-semibold leading-7 tracking-tight text-accent text-5xl">
               US Stocks, Meet Solana.
             </h1>
@@ -45,34 +46,17 @@ export default function Hero() {
               Explore Stocks
               <ArrowUpRight className="h-4 w-4" />
             </Link>
+            <Link
+              href="#services"
+              className="mt-8 ml-3 inline-flex items-center gap-2 rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
+            >
+              How It Works
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
 
-          {/* Team Avatars - Top Right */}
-          <div className="flex items-center gap-3">
-            <div className="flex -space-x-3">
-              <Image
-                src="/images/imgi_114_user94.webp"
-                alt="Team member"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-background"
-              />
-              <Image
-                src="/images/imgi_110_user90.webp"
-                alt="Team member"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-background"
-              />
-              <Image
-                src="/images/imgi_111_user91.webp"
-                alt="Team member"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-background"
-              />
-            </div>
-            <p className="text-sm text-foreground/70 max-w-[180px]">
+          <div className="max-w-[260px] pt-8 lg:pt-12">
+            <p className="text-sm leading-6 text-foreground/70">
               Discover supported stock-linked assets, review market information, and explore onchain trading.
             </p>
           </div>

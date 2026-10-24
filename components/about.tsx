@@ -10,23 +10,24 @@ export default function About() {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <Info className="w-5 h-5 text-accent" strokeWidth={2} />
-              <span className="text-sm font-medium text-foreground/70">US EQUITIES. ONCHAIN ACCESS.</span>
+              <span className="text-sm font-medium text-foreground/70">TOKENIZED ASSETS</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-serif text-foreground leading-tight text-balance">
-              Explore the US stock market through a simpler onchain experience.
+              Stocks, represented onchain.
             </h2>
 
             <p className="mt-6 text-foreground/70">
-              Discover leading companies, review tokenized stock products, and learn how supported assets work within
-              the Solana ecosystem. Stock and token prices, liquidity, and rights may differ by product.
+              Tokenization can represent ownership interests or economic exposure through digital assets. Each
+              stock-linked token has its own issuer, legal structure, rights, and restrictions. logsi helps users
+              explore supported assets and understand the information behind them.
             </p>
 
             <Link
               href="#works"
               className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors group"
             >
-              Explore the market
+              Explore supported assets
               <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
           </div>
