@@ -1,0 +1,79 @@
+"use client"
+
+import { ArrowRight, Briefcase, Plus } from "lucide-react"
+import { useState } from "react"
+
+const panels = [
+  {
+    title: "Supported issuers & asset structures",
+    eyebrow: "STOCK-LINKED TOKENS · ISSUER DISCLOSURES",
+    body: "Understand the issuer, the relationship between each token and its underlying stock, and the rights or restrictions that apply before you interact with an asset.",
+  },
+  {
+    title: "Distribution & wallet access",
+    eyebrow: "SOLANA WALLETS · ELIGIBLE ASSETS",
+    body: "Connect a compatible Solana wallet when required and review supported asset identifiers, verified records, and availability before taking action.",
+  },
+  {
+    title: "Trading & market routes",
+    eyebrow: "QUOTES · FEES · SLIPPAGE",
+    body: "Explore a clear buy and sell flow that separates the underlying stock reference from any token price, quote, liquidity, fees, and execution status.",
+  },
+]
+
+export default function SelectedWorks() {
+  const [openPanel, setOpenPanel] = useState(-1)
+
+  return (
+    <section id="works" className="bg-background px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 max-w-5xl">
+          <div className="mb-5 flex items-center gap-2">
+            <Briefcase className="h-5 w-5 text-accent" strokeWidth={2} />
+            <span className="text-sm font-medium uppercase tracking-[0.14em] text-foreground/70">The logsi market</span>
+          </div>
+          <h2 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.05em] text-foreground md:text-7xl lg:text-8xl">
+            Explore, understand, and trade tokenized assets.
+          </h2>
+        </div>
+
+        <div className="space-y-3">
+          {panels.map((panel, index) => {
+            const isOpen = openPanel === index
+            return (
+              <article
+                key={panel.title}
+                className="group overflow-hidden rounded-br-[5rem] bg-[#f0f2f4] text-[#102326] transition-colors duration-500 hover:bg-black hover:text-white"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenPanel(isOpen ? -1 : index)}
+                  className="flex w-full items-start justify-between gap-6 px-7 py-8 text-left md:px-11 md:py-10"
+                  aria-expanded={isOpen}
+                >
+                  <span>
+                    <span className="block text-3xl font-medium tracking-[-0.04em] md:text-5xl">{panel.title}</span>
+                    <span className="mt-4 block text-xs font-semibold tracking-[0.14em] text-[#52646b] transition-colors duration-500 group-hover:text-[#7d9298]">{panel.eyebrow}</span>
+                  </span>
+                  <span className="mt-1 grid h-12 w-12 shrink-0 place-items-center rounded-full border border-[#52646b] text-[#102326] transition-colors duration-500 group-hover:border-white/40 group-hover:text-white">
+                    <Plus className={`transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`} size={28} strokeWidth={1.5} />
+                  </span>
+                </button>
+                <div className={`grid transition-[grid-template-rows,opacity] duration-500 ease-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                  <div className="min-h-0 overflow-hidden px-7 md:px-11">
+                    <div className="max-w-2xl pb-10">
+                      <p className="text-base leading-7 text-[#52646b] transition-colors duration-500 group-hover:text-white/70">{panel.body}</p>
+                      <a href="#contact" className="mt-6 inline-flex items-center gap-3 rounded-md border border-[#238b79] px-5 py-3 text-xs font-bold uppercase tracking-[0.13em] text-[#238b79] transition-colors duration-500 hover:opacity-80 group-hover:border-[#40d6b4] group-hover:bg-[#40d6b4] group-hover:text-[#102326]">
+                        Explore details <ArrowRight size={18} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,46 @@
+import { ArrowUpRight, BarChart3, ShieldCheck } from "lucide-react"
+import Link from "next/link"
+
+const stats = [
+  { label: "Market reference", value: "US", note: "US-listed company context" },
+  { label: "Trading state", value: "Demo", note: "Simulated until routes are live" },
+  { label: "Blockchain rail", value: "SOL", note: "Solana-compatible interactions" },
+  { label: "Asset information", value: "Clear", note: "Issuer and structure first" },
+  { label: "Risk first", value: "Yes", note: "Disclosures before action" },
+  { label: "Wallet access", value: "Ready", note: "Connect when required" },
+]
+
+export default function Stats() {
+  return (
+    <section className="bg-black px-6 py-24 text-white md:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <div className="mb-5 flex items-center gap-2 text-white/70">
+              <ShieldCheck className="h-5 w-5" strokeWidth={1.7} />
+              <span className="text-sm font-medium uppercase tracking-[0.14em]">Know what you hold</span>
+            </div>
+            <h2 className="text-4xl font-medium leading-[1.02] tracking-[-0.05em] md:text-6xl">Clear context for every supported asset.</h2>
+            <p className="mt-6 max-w-xl text-base leading-7 text-white/60">Review stock references, token structure, issuer information, wallet requirements, and risk disclosures before you interact.</p>
+          </div>
+          <Link href="#blog" className="inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/80">
+            Read the disclosures <ArrowUpRight size={16} />
+          </Link>
+        </div>
+
+        <div className="grid border-l border-t border-white/20 sm:grid-cols-2 lg:grid-cols-3">
+          {stats.map((stat) => (
+            <div key={stat.label} className="group min-h-52 border-b border-r border-white/20 p-7 transition-colors hover:bg-white hover:text-black md:p-9">
+              <div className="flex items-center justify-between gap-4">
+                <p className="text-sm text-white/50 transition-colors group-hover:text-black/55">{stat.label}</p>
+                <BarChart3 className="h-4 w-4 text-white/35 transition-colors group-hover:text-black/40" />
+              </div>
+              <p className="mt-10 text-5xl font-semibold tracking-[-0.07em] md:text-6xl">{stat.value}</p>
+              <p className="mt-3 text-sm text-white/50 transition-colors group-hover:text-black/55">{stat.note}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
