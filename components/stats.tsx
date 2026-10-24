@@ -4,7 +4,7 @@ import Link from "next/link"
 const stats = [
   { label: "Market reference", value: "US", note: "US-listed company context" },
   { label: "Trading state", value: "Demo", note: "Simulated until routes are live" },
-  { label: "Blockchain rail", value: "SOL", note: "Solana-compatible interactions" },
+  { label: "Blockchain rail", value: "SOL", note: "Solana mainnet" },
   { label: "Asset information", value: "Clear", note: "Issuer and structure first" },
   { label: "Risk first", value: "Yes", note: "Disclosures before action" },
   { label: "Wallet access", value: "Ready", note: "Connect when required" },

@@ -37,14 +37,14 @@ export default function Services() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Settings className="w-5 h-5 text-accent" strokeWidth={2} />
-              <span className="text-sm font-medium text-foreground/70">BUILT ON SOLANA</span>
+              <span className="text-sm font-medium text-foreground/70">BUILT ON SOLANA MAINNET</span>
             </div>
 
             <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Onchain access with greater visibility.</h2>
 
             <p className="text-foreground/70 max-w-lg">
-              Solana provides the blockchain infrastructure for supported token interactions. logsi connects the stock
-              discovery experience with compatible onchain assets and transaction information.
+              Solana mainnet provides the blockchain infrastructure for supported token interactions. logsi connects
+              the stock discovery experience with compatible onchain assets and transaction information.
             </p>
 
             <Link

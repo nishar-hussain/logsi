@@ -79,13 +79,6 @@ export default function Hero() {
             className="w-full h-auto object-cover"
           />
 
-          {/* Video Play Button */}
-          <div className="absolute bottom-6 right-6 bg-foreground text-background rounded-xl px-4 py-3 flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-background/20 flex items-center justify-center">
-              <div className="w-0 h-0 border-t-4 border-b-4 border-l-6 border-transparent border-l-background ml-1" />
-            </div>
-            <span className="text-sm font-medium">How it works</span>
-          </div>
         </div>
       </div>
     </section>

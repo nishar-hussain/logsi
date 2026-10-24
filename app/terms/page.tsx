@@ -4,7 +4,7 @@ export default function TermsPage() {
   return <LegalPage
     eyebrow="LEGAL · TERMS OF SERVICE"
     title="Terms of Service"
-    intro="These terms describe the basic rules for using the Logsi website and demo experience. By accessing Logsi, you agree to use the service lawfully and responsibly."
+    intro="These terms describe the basic rules for using the Logsi website, supported Solana mainnet interactions, and demo experience. By accessing Logsi, you agree to use the service lawfully and responsibly."
     sections={[
       { title: "1. The Logsi service", body: "Logsi provides educational market information, product explanations, and interfaces for exploring supported tokenized stock concepts. Unless expressly stated otherwise, Logsi is not a broker, exchange, investment adviser, custodian, issuer, or execution venue." },
       { title: "2. Demo experience", body: "Some features may use sample or simulated data. Demo orders, balances, quotes, and transaction states do not execute onchain, do not transfer assets, and do not create ownership of shares or tokens." },

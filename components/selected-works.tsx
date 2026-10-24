@@ -10,9 +10,9 @@ const panels = [
     body: "Explore verified asset information and understand each token's relationship with its underlying stock before you interact with it.",
   },
   {
-    title: "Solana wallet access",
+    title: "Solana mainnet wallet access",
     eyebrow: "WALLET AUTHORIZATION · ELIGIBLE ASSETS",
-    body: "Connect a compatible wallet when required to interact with supported assets and inspect available onchain information.",
+    body: "Connect a compatible Solana mainnet wallet when required to interact with supported assets and inspect available onchain information.",
   },
   {
     title: "Trading information",

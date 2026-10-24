@@ -11,7 +11,7 @@ const features = [
   {
     icon: Waves,
     title: "Solana access.\nOnchain visibility.",
-    description: "Use the Solana ecosystem to inspect supported token interactions and connect a compatible wallet when a blockchain action is available.",
+    description: "Use Solana mainnet to inspect supported token interactions and connect a compatible wallet when a blockchain action is available.",
     className: "bg-[#00352d] text-[#6ce0b0]",
     art: "bars",
   },

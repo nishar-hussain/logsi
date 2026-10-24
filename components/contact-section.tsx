@@ -50,7 +50,7 @@ export default function ContactSection() {
             before confirming. If the current application is in demo mode, it will be clearly labelled.
           </p>
           <div className="mb-8 inline-flex items-center rounded-full border border-foreground/20 bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70">
-            Demo Trading — orders are simulated and do not execute onchain
+            Solana Mainnet · Demo Trading — orders are simulated and do not execute onchain
           </div>
 
         {/* Contact Content */}
