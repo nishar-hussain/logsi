@@ -40,6 +40,8 @@ export default function Hero() {
 
             <a
               href="https://app.lokgi.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition-opacity"
             >
               Explore Markets

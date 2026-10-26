@@ -75,6 +75,8 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="https://app.lokgi.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors cursor-pointer"
           >
             Explore platform
@@ -103,6 +105,8 @@ export default function Header() {
               ))}
               <a
                 href="https://app.lokgi.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-medium text-foreground w-fit cursor-pointer"
               >
                 Explore platform
