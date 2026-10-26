@@ -2,7 +2,6 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import TokenizedFeatures from "@/components/tokenized-features"
-import MarketIndex from "@/components/market-index"
 import SelectedWorks from "@/components/selected-works"
 import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
@@ -18,7 +17,6 @@ export default function Home() {
       <Hero />
       <About />
       <TokenizedFeatures />
-      <MarketIndex />
       <SelectedWorks />
       <Services />
       <Testimonials />
