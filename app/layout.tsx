@@ -17,7 +17,7 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: "lokgi — US Stocks, Meet Solana",
-  description: "Explore US-listed companies, official closing prices, and non-transferable USDC-vault claims on Solana devnet.",
+  description: "Explore US-listed companies, official closing prices, and non-transferable USDC-vault claims on Solana mainnet.",
   icons: {
     icon: "/images/logsi-mark.jpeg",
   },

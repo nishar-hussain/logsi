@@ -3,11 +3,11 @@ import Link from "next/link"
 
 const stats = [
   { label: "Market reference", value: "US", note: "US-listed company context" },
-  { label: "Supported claims", value: "24", note: "Available on devnet" },
-  { label: "Blockchain rail", value: "SOL", note: "Solana devnet" },
-  { label: "Claim structure", value: "USDC", note: "Vault-backed and non-transferable" },
+  { label: "Supported claims", value: "24", note: "Available on mainnet" },
+  { label: "Blockchain rail", value: "SOL", note: "Solana mainnet" },
+  { label: "Claim structure", value: "USDC", note: "Mainnet vault-backed and non-transferable" },
   { label: "Price source", value: "Close", note: "Latest official regular-session close" },
-  { label: "Network status", value: "Devnet", note: "Development environment" },
+  { label: "Network status", value: "Mainnet", note: "Production environment" },
 ]
 
 export default function Stats() {

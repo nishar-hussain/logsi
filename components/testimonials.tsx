@@ -4,16 +4,16 @@ import { Quote } from "lucide-react"
 const testimonials = [
   {
     title: "Is a Lokgi token a stock?",
-    quote: "No. A Lokgi token is a non-transferable claim against USDC in the Lokgi devnet vault, priced using the latest official closing price. It does not convey company ownership, voting rights, or dividends.",
+    quote: "No. A Lokgi token is a non-transferable claim against USDC in the Lokgi mainnet vault, priced using the latest official closing price. It does not convey company ownership, voting rights, or dividends.",
     author: "Claim structure",
     location: "Understand what you hold",
     image: "/images/imgi_108_user88.webp",
   },
   {
     title: "Is Lokgi running on Solana mainnet?",
-    quote: "No. The current product is deployed on Solana devnet. Its devnet SOL and USDC have no monetary value.",
+    quote: "Yes. The current product is deployed on Solana mainnet. Always verify the network, wallet, token mint, and transaction details before authorizing a trade.",
     author: "Network status",
-    location: "Development environment",
+    location: "Production environment",
     image: "/images/imgi_113_user93.webp",
   },
   {

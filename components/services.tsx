@@ -43,7 +43,7 @@ export default function Services() {
             <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Every trade has a verifiable flow.</h2>
 
             <p className="text-foreground/70 max-w-lg">
-              Lokgi combines server-prepared prices, wallet authorization, and Solana devnet settlement to execute supported buy and sell orders.
+              Lokgi combines server-prepared prices, wallet authorization, and Solana mainnet settlement to execute supported buy and sell orders.
             </p>
 
             <Link

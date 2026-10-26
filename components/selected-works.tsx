@@ -11,13 +11,13 @@ const panels = [
   },
   {
     title: "Wallet-authorized settlement",
-    eyebrow: "SOLANA DEVNET · SUPPORTED CLAIMS",
-    body: "Connect a compatible Solana wallet and authorize supported buy or sell orders against the Lokgi devnet USDC vault.",
+    eyebrow: "SOLANA MAINNET · SUPPORTED CLAIMS",
+    body: "Connect a compatible Solana wallet and authorize supported buy or sell orders against the Lokgi mainnet USDC vault.",
   },
   {
     title: "Understand the claim",
     eyebrow: "NON-TRANSFERABLE · USDC VAULT · DISCLOSURES",
-    body: "Lokgi claims are not company shares. Review the vault structure, price source, transfer restrictions, fees, limits, and devnet status before trading.",
+    body: "Lokgi claims are not company shares. Review the vault structure, price source, transfer restrictions, fees, limits, and mainnet status before trading.",
   },
 ]
 

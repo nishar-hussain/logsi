@@ -13,7 +13,7 @@ const articles = [
   {
     category: "Solana",
     date: "Guide",
-    title: "How Solana devnet supports verifiable settlement",
+    title: "How Solana mainnet supports verifiable settlement",
     image: "/images/chat.png",
     href: "#services",
   },
@@ -38,7 +38,7 @@ export default function LatestArticles() {
             </div>
             <h2 className="max-w-3xl text-4xl font-medium leading-[1.02] tracking-[-0.05em] md:text-6xl">Understand the market and the asset.</h2>
           </div>
-          <p className="max-w-sm text-sm leading-6 text-white/55">Clear guides to official closing prices, devnet settlement, non-transferable claims, and the risks behind every trade.</p>
+          <p className="max-w-sm text-sm leading-6 text-white/55">Clear guides to official closing prices, mainnet settlement, non-transferable claims, and the risks behind every trade.</p>
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">

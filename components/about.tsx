@@ -18,7 +18,7 @@ export default function About() {
             </h2>
 
             <p className="mt-6 text-foreground/70">
-              A Lokgi token is a non-transferable claim against USDC held in the Lokgi devnet vault. Its price is derived from the latest official closing price of the corresponding US-listed company. It is not a share and does not provide company ownership, voting rights, or dividends.
+              A Lokgi token is a non-transferable claim against USDC held in the Lokgi mainnet vault. Its price is derived from the latest official closing price of the corresponding US-listed company. It is not a share and does not provide company ownership, voting rights, or dividends.
             </p>
 
             <Link
@@ -39,7 +39,7 @@ export default function About() {
             <h3 className="text-xl font-semibold text-foreground mb-4">Reference price. Vault claim.</h3>
 
             <p className="text-foreground/70">
-              A buy transfers devnet USDC into the program-controlled vault and mints a claim. A sale burns the claim and returns applicable USDC proceeds, subject to vault liquidity. Claims cannot be transferred to another wallet.
+              A buy transfers USDC into the program-controlled mainnet vault and mints a claim. A sale burns the claim and returns applicable USDC proceeds, subject to vault liquidity. Claims cannot be transferred to another wallet.
             </p>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-foreground/70">
-              Discover leading US companies, explore stock-market prices, and experience onchain trading through Lokgi. Buy and sell stock-price-linked claims against a USDC vault on Solana devnet, with wallet-authorized transactions and verifiable settlement.
+              Discover leading US companies, explore stock-market prices, and experience onchain trading through Lokgi. Buy and sell stock-price-linked claims against a USDC vault on Solana mainnet, with wallet-authorized transactions and verifiable settlement.
             </p>
 
             <a
@@ -74,7 +74,7 @@ export default function Hero() {
         >
           <Image
             src="/images/97ab9037-5842-4584-bc95-9fc90baece99.png"
-            alt="Lokgi US stock market dashboard on Solana devnet"
+            alt="Lokgi US stock market dashboard on Solana mainnet"
             width={1920}
             height={600}
             className="w-full h-auto object-cover"
