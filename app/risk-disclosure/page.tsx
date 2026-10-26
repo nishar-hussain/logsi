@@ -12,7 +12,7 @@ export default function RiskDisclosurePage() {
       { title: "Liquidity and execution risk", body: "An asset may have limited liquidity or no functioning trading route. You may be unable to buy, sell, transfer, or redeem an asset at the expected price or within the expected timeframe." },
       { title: "Blockchain and wallet risk", body: "Transactions may be irreversible. Smart-contract, network congestion, wallet, private-key, phishing, software, and third-party integration risks may result in loss or delay. Never share a seed phrase or private key." },
       { title: "Regulatory and jurisdictional risk", body: "Availability, transferability, investor eligibility, tax treatment, and legal protections may vary by jurisdiction and may change. Do not access or trade an asset where doing so is not permitted." },
-      { title: "Mainnet and demo trading notice", body: "logki may support Solana mainnet asset interactions where an eligible asset and functioning route are available. Any prototype balances, quotes, or orders explicitly labelled Demo Trading are simulated, do not execute onchain, and do not create token ownership, equity ownership, or a claim against an issuer." },
+      { title: "Mainnet and demo trading notice", body: "lokgi may support Solana mainnet asset interactions where an eligible asset and functioning route are available. Any prototype balances, quotes, or orders explicitly labelled Demo Trading are simulated, do not execute onchain, and do not create token ownership, equity ownership, or a claim against an issuer." },
     ]}
   />
 }

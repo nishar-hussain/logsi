@@ -43,7 +43,7 @@ export default function Services() {
             <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Onchain access with greater visibility.</h2>
 
             <p className="text-foreground/70 max-w-lg">
-              Solana mainnet provides the blockchain infrastructure for supported token interactions. logki connects
+              Solana mainnet provides the blockchain infrastructure for supported token interactions. lokgi connects
               the stock discovery experience with compatible onchain assets and transaction information.
             </p>
 

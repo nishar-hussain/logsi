@@ -53,8 +53,8 @@ export default function Header() {
             className={`font-bold text-foreground transition-all duration-300 ${scrolled ? "text-xl" : "text-2xl"}`}
           >
             <span className="flex items-center gap-2">
-              <Image src="/images/logsi-mark.jpeg" alt="logki mark" width={30} height={30} className="h-7 w-7 rounded-md object-contain" />
-              <span>logki</span>
+              <Image src="/images/logsi-mark.jpeg" alt="lokgi mark" width={30} height={30} className="h-7 w-7 rounded-md object-contain" />
+              <span>lokgi</span>
             </span>
           </Link>
 

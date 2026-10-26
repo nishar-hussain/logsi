@@ -16,7 +16,7 @@ const dmSerif = DM_Serif_Display({
 })
 
 export const metadata: Metadata = {
-  title: "logki — US Stocks, Meet Solana",
+  title: "lokgi — US Stocks, Meet Solana",
   description: "Explore supported tokenized US stock assets and onchain market information through the Solana ecosystem.",
   icons: {
     icon: "/images/logsi-mark.jpeg",
