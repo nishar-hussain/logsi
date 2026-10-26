@@ -39,13 +39,13 @@ export default function Hero() {
               investment experience powered by Solana.
             </p>
 
-            <Link
-              href="#works"
+            <a
+              href="https://www.lokgi.com/"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition-opacity"
             >
-              Explore Stocks
+              Explore platform
               <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            </a>
             <Link
               href="#services"
               className="mt-8 ml-3 inline-flex items-center gap-2 rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"

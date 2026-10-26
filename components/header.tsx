@@ -74,11 +74,10 @@ export default function Header() {
 
           {/* CTA Button */}
           <a
-            href="#contact"
-            onClick={(e) => handleNavClick(e, "#contact")}
+            href="https://www.lokgi.com/"
             className="hidden md:flex items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground hover:border-accent transition-colors cursor-pointer"
           >
-            Explore stocks
+            Explore platform
             <ArrowUpRight className="h-4 w-4" />
           </a>
 
@@ -103,11 +102,10 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="#contact"
-                onClick={(e) => handleNavClick(e, "#contact")}
+                href="https://www.lokgi.com/"
                 className="flex items-center gap-2 rounded-full border border-foreground px-5 py-2.5 text-sm font-medium text-foreground w-fit cursor-pointer"
               >
-                Explore stocks
+                Explore platform
                 <ArrowUpRight className="h-4 w-4" />
               </a>
             </nav>
