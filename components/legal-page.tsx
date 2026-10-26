@@ -9,7 +9,7 @@ export default function LegalPage({ eyebrow, title, intro, sections }: { eyebrow
     <main className="min-h-screen bg-background text-foreground">
       <Header />
       <article className="mx-auto max-w-4xl px-6 pb-24 pt-40 md:pt-48">
-        <Link href="/" className="text-sm font-medium text-foreground/60 hover:text-accent">← Back to logsi</Link>
+        <Link href="/" className="text-sm font-medium text-foreground/60 hover:text-accent">← Back to logki</Link>
         <p className="mt-12 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">{eyebrow}</p>
         <h1 className="mt-5 text-5xl font-semibold leading-[0.98] tracking-[-0.05em] md:text-7xl">{title}</h1>
         <p className="mt-8 max-w-3xl text-lg leading-8 text-foreground/70">{intro}</p>

@@ -19,7 +19,7 @@ export default function About() {
 
             <p className="mt-6 text-foreground/70">
               Tokenization can represent ownership interests or economic exposure through digital assets. Each
-              stock-linked token has its own issuer, legal structure, rights, and restrictions. logsi helps users
+              stock-linked token has its own issuer, legal structure, rights, and restrictions. logki helps users
               explore supported assets and understand the information behind them.
             </p>
 
