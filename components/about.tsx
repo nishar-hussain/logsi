@@ -10,24 +10,22 @@ export default function About() {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <Info className="w-5 h-5 text-accent" strokeWidth={2} />
-              <span className="text-sm font-medium text-foreground/70">TOKENIZED ASSETS</span>
+              <span className="text-sm font-medium text-foreground/70">ASSET STRUCTURE</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-serif text-foreground leading-tight text-balance">
-              Stocks, represented onchain.
+              Know exactly what you hold.
             </h2>
 
             <p className="mt-6 text-foreground/70">
-              Tokenization can represent ownership interests or economic exposure through digital assets. Each
-              stock-linked token has its own issuer, legal structure, rights, and restrictions. lokgi helps users
-              explore supported assets and understand the information behind them.
+              A Lokgi token is a non-transferable claim against USDC held in the Lokgi devnet vault. Its price is derived from the latest official closing price of the corresponding US-listed company. It is not a share and does not provide company ownership, voting rights, or dividends.
             </p>
 
             <Link
-              href="#works"
+              href="/risk-disclosure"
               className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-accent transition-colors group"
             >
-              Explore supported assets
+              Read the Risk Disclosure
               <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
           </div>
@@ -38,11 +36,10 @@ export default function About() {
               <CircleDollarSign className="h-6 w-6 text-accent-foreground" />
             </div>
 
-            <h3 className="text-xl font-semibold text-foreground mb-4">Stocks, represented onchain</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Reference price. Vault claim.</h3>
 
             <p className="text-foreground/70">
-              Tokenized assets are digital representations linked to financial products. Always review the issuer,
-              backing, redemption arrangements, liquidity, and restrictions before trading.
+              A buy transfers devnet USDC into the program-controlled vault and mints a claim. A sale burns the claim and returns applicable USDC proceeds, subject to vault liquidity. Claims cannot be transferred to another wallet.
             </p>
           </div>
         </div>

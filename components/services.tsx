@@ -4,26 +4,26 @@ import Link from "next/link"
 const services = [
   {
     icon: Eye,
-    title: "Onchain transactions",
-    description: "Eligible token transfers and trades can be verified through Solana transaction records.",
+    title: "US market discovery",
+    description: "Explore US-listed companies with company information, price changes, and historical charts.",
     href: "#contact",
   },
   {
     icon: CircleCheck,
-    title: "Transparent asset information",
-    description: "Review token identifiers, issuer details, and verified onchain records where available.",
-    href: "#about",
+    title: "Price-based claims",
+    description: "Buy or sell supported claims using prices derived from the latest completed US regular-session close.",
+    href: "/risk-disclosure",
   },
   {
     icon: Wallet,
-    title: "Simple trading experience",
-    description: "Explore supported assets, review trade details, and connect a compatible Solana wallet when required.",
+    title: "Verifiable settlement",
+    description: "Orders are prepared by the API, authorized by your wallet, and validated by the Solana program.",
     href: "#contact",
   },
   {
     icon: LineChart,
-    title: "Portfolio visibility",
-    description: "Track supported token balances, transaction activity, and estimated asset values in one view.",
+    title: "Portfolio accounting",
+    description: "Review USDC balances, holdings, cost basis, estimated profit and loss, and transaction history.",
     href: "#contact",
   },
 ]
@@ -37,21 +37,20 @@ export default function Services() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Settings className="w-5 h-5 text-accent" strokeWidth={2} />
-              <span className="text-sm font-medium text-foreground/70">BUILT ON SOLANA MAINNET</span>
+              <span className="text-sm font-medium text-foreground/70">FROM MARKET DATA TO SETTLEMENT</span>
             </div>
 
-            <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Onchain access with greater visibility.</h2>
+            <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Every trade has a verifiable flow.</h2>
 
             <p className="text-foreground/70 max-w-lg">
-              Solana mainnet provides the blockchain infrastructure for supported token interactions. lokgi connects
-              the stock discovery experience with compatible onchain assets and transaction information.
+              Lokgi combines server-prepared prices, wallet authorization, and Solana devnet settlement to execute supported buy and sell orders.
             </p>
 
             <Link
-              href="/services"
+              href="#contact"
               className="mt-8 inline-flex items-center gap-2 rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
             >
-              See how it works
+              Explore the Trading Flow
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>

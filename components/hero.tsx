@@ -29,35 +29,34 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
           {/* Product introduction */}
           <div className="lg:max-w-3xl pt-0">
-            <p className="mb-5 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">US EQUITIES. ONCHAIN ACCESS.</p>
+            <p className="mb-5 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">US EQUITY MARKETS. ONCHAIN SETTLEMENT.</p>
             <h1 className="leading-tight text-balance text-left font-sans font-semibold leading-7 tracking-tight text-accent text-5xl">
-              US Stocks, Meet Solana.
+              Explore US Stocks. Trade Onchain.
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-foreground/70">
-              Explore leading US companies, discover supported tokenized stock assets, and access a new digital
-              investment experience powered by Solana.
+              Discover leading US companies, explore stock-market prices, and experience onchain trading through Lokgi. Buy and sell stock-price-linked claims against a USDC vault on Solana devnet, with wallet-authorized transactions and verifiable settlement.
             </p>
 
             <a
-              href="https://www.lokgi.com/"
+              href="https://app.lokgi.com"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition-opacity"
             >
-              Explore platform
+              Explore Markets
               <ArrowUpRight className="h-4 w-4" />
             </a>
             <Link
               href="#services"
               className="mt-8 ml-3 inline-flex items-center gap-2 rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground hover:bg-foreground hover:text-background transition-colors"
             >
-              How It Works
+              How Lokgi Works
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>
 
           <div className="max-w-[260px] pt-8 lg:pt-12">
             <p className="text-sm leading-6 text-foreground/70">
-              Discover supported stock-linked assets, review market information, and explore onchain trading.
+              Explore 24 supported stock-linked claims alongside a broader directory of US-listed companies.
             </p>
           </div>
         </div>
@@ -73,7 +72,7 @@ export default function Hero() {
         >
           <Image
             src="/images/97ab9037-5842-4584-bc95-9fc90baece99.png"
-            alt="Tokenized US stocks on Solana"
+            alt="Lokgi US stock market dashboard on Solana devnet"
             width={1920}
             height={600}
             className="w-full h-auto object-cover"

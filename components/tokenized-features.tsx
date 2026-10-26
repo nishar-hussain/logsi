@@ -3,22 +3,22 @@ import { ArrowUpRight, ShieldCheck, Waves, Globe2 } from "lucide-react"
 const features = [
   {
     icon: Globe2,
-    title: "Tokenized stocks.\nClear market context.",
-    description: "Explore US-listed companies, compare stock reference prices, and understand when a verified stock-linked token is actually available.",
+    title: "US market discovery.",
+    description: "Explore a broad directory of US-listed companies with company information, price changes, and historical charts.",
     className: "bg-[#21003e] text-[#d3a4ff]",
     art: "dots",
   },
   {
     icon: Waves,
-    title: "Solana access.\nOnchain visibility.",
-    description: "Use Solana mainnet to inspect supported token interactions and connect a compatible wallet when a blockchain action is available.",
+    title: "Price-based claims.",
+    description: "Buy or sell supported claims using prices derived from the latest completed US regular-session close.",
     className: "bg-[#00352d] text-[#6ce0b0]",
     art: "bars",
   },
   {
     icon: ShieldCheck,
-    title: "Verified. Transparent.\nRisk aware.",
-    description: "Review the issuer, asset structure, identifier, liquidity, restrictions, and disclosures before interacting with any supported asset.",
+    title: "Verifiable settlement.",
+    description: "Orders are prepared by the API, authorized by your wallet, and validated by the Solana program before the fill is recorded.",
     className: "bg-[#0b1c3c] text-[#8bb8ff]",
     art: "squares",
   },
@@ -29,7 +29,7 @@ export default function TokenizedFeatures() {
     <section id="tokenized-stocks" className="bg-black px-6 py-24 text-white md:py-32">
       <div className="mx-auto max-w-7xl">
         <h2 className="mx-auto mb-20 max-w-3xl text-center text-5xl font-medium leading-[0.98] tracking-[-0.06em] md:text-7xl">
-          Tokenized stocks.<br />Solana accessibility.
+          Market discovery meets<br />onchain settlement.
         </h2>
 
         <div className="grid gap-6 lg:grid-cols-3">

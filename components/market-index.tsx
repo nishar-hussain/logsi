@@ -33,11 +33,12 @@ function getIcon(icon: string) {
   const collection = prefix === "logos" ? logos : simpleIcons
   const data = collection.icons[name as keyof typeof collection.icons]
   if (!data) return undefined
+  const iconData = data as { body: string; width?: number; height?: number }
 
   return {
-    ...data,
-    width: data.width ?? collection.width,
-    height: data.height ?? collection.height,
+    ...iconData,
+    width: iconData.width ?? collection.width,
+    height: iconData.height ?? collection.height,
   }
 }
 

@@ -4,23 +4,23 @@ import { ArrowUpRight, BookOpen } from "lucide-react"
 
 const articles = [
   {
-    category: "Tokenization",
+    category: "Claim structure",
     date: "Guide",
-    title: "What tokenized US stocks are and how their rights can differ",
+    title: "What Lokgi claims are and how their rights differ",
     image: "/images/vision-ai.png",
     href: "#about",
   },
   {
     category: "Solana",
     date: "Guide",
-    title: "How Solana supports transparent onchain asset interactions",
+    title: "How Solana devnet supports verifiable settlement",
     image: "/images/chat.png",
     href: "#services",
   },
   {
     category: "Risk",
     date: "Guide",
-    title: "Liquidity, custody, issuer, and redemption risks to understand",
+    title: "Prices, liquidity, and claim risks to understand",
     image: "/images/motion-ai.png",
     href: "#blog",
   },
@@ -38,7 +38,7 @@ export default function LatestArticles() {
             </div>
             <h2 className="max-w-3xl text-4xl font-medium leading-[1.02] tracking-[-0.05em] md:text-6xl">Understand the market and the asset.</h2>
           </div>
-          <p className="max-w-sm text-sm leading-6 text-white/55">Simple guides for exploring tokenized US stocks, Solana interactions, and the risks behind every asset.</p>
+          <p className="max-w-sm text-sm leading-6 text-white/55">Clear guides to official closing prices, devnet settlement, non-transferable claims, and the risks behind every trade.</p>
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">

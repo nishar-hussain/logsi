@@ -3,11 +3,11 @@ import Link from "next/link"
 
 const stats = [
   { label: "Market reference", value: "US", note: "US-listed company context" },
-  { label: "Trading state", value: "Demo", note: "Simulated until routes are live" },
-  { label: "Blockchain rail", value: "SOL", note: "Solana mainnet" },
-  { label: "Asset information", value: "Clear", note: "Issuer and structure first" },
-  { label: "Risk first", value: "Yes", note: "Disclosures before action" },
-  { label: "Wallet access", value: "Ready", note: "Connect when required" },
+  { label: "Supported claims", value: "24", note: "Available on devnet" },
+  { label: "Blockchain rail", value: "SOL", note: "Solana devnet" },
+  { label: "Claim structure", value: "USDC", note: "Vault-backed and non-transferable" },
+  { label: "Price source", value: "Close", note: "Latest official regular-session close" },
+  { label: "Network status", value: "Devnet", note: "Development environment" },
 ]
 
 export default function Stats() {
@@ -21,7 +21,7 @@ export default function Stats() {
               <span className="text-sm font-medium uppercase tracking-[0.14em]">Know what you hold</span>
             </div>
             <h2 className="text-4xl font-medium leading-[1.02] tracking-[-0.05em] md:text-6xl">Clear context for every supported asset.</h2>
-            <p className="mt-6 max-w-xl text-base leading-7 text-white/60">Review stock references, token structure, issuer information, wallet requirements, and risk disclosures before you interact.</p>
+            <p className="mt-6 max-w-xl text-base leading-7 text-white/60">Review stock references, claim structure, wallet requirements, price sources, and risk disclosures before you interact.</p>
           </div>
           <Link href="#blog" className="inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/80">
             Read the disclosures <ArrowUpRight size={16} />

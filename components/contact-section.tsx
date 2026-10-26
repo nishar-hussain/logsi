@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useEffect, useState } from "react"
 import { ArrowUpRight, Send } from "lucide-react"
 import Image from "next/image"
@@ -23,34 +21,20 @@ export default function ContactSection() {
     return () => window.clearInterval(interval)
   }, [stockLogos.length])
 
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
-
   return (
     <section id="contact" className="py-20 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="flex items-center gap-2 mb-4">
           <Send className="w-5 h-5 text-accent" strokeWidth={2} />
-          <span className="text-sm font-medium text-foreground/70">Buy and sell</span>
+          <span className="text-sm font-medium text-foreground/70">ONCHAIN TRADING DESK</span>
         </div>
 
           <p className="text-foreground/70 max-w-xl mb-12">
-            Choose a supported tokenized stock, review the current quote, and see the expected output, fees, and slippage
-            before confirming. If the current application is in demo mode, it will be clearly labelled.
+            Choose a supported stock-linked claim, review the complete order preview, and authorize a transaction with your Solana devnet wallet.
           </p>
           <div className="mb-8 inline-flex items-center rounded-full border border-foreground/20 bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70">
-            Solana Mainnet · Demo Trading — orders are simulated and do not execute onchain
+            SOLANA DEVNET · DEVELOPMENT ENVIRONMENT
           </div>
 
         {/* Contact Content */}
@@ -75,78 +59,26 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Form */}
+          {/* Trading Desk */}
           <div className="bg-card p-8 border-border rounded-none border-0">
-            <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-2">Your next trade starts here</h3>
+            <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-2">Review your trade. Confirm onchain.</h3>
             <p className="text-foreground/70 mb-8">
-              Select an available asset, enter an amount, review the quote and fees, then connect your Solana wallet
-              when a real trading route is available.
+              Buy or sell supported non-transferable claims against the Lokgi devnet USDC vault. Every order preview shows the price, quantity, 0.10% platform fee, limits, and quote expiration.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Asset or ticker*"
-                    value={formData.firstName}
-                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-3 rounded-none border border-border bg-background text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-foreground/50"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Buy or sell"
-                    value={formData.lastName}
-                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-3 rounded-none border border-border bg-background text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-foreground/50"
-                  />
-                </div>
-              </div>
+            <div className="space-y-4 border-y border-border py-6 text-sm text-foreground/70">
+              <p>Minimum order: $1 · Maximum order: $10,000</p>
+              <p>Daily notional limit: $25,000 · Quote lifetime: 60 seconds</p>
+              <p>Devnet SOL and USDC have no monetary value and do not represent real-money stock trading.</p>
+            </div>
 
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Amount*"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-none border border-border bg-background text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-foreground/50"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    placeholder="Solana wallet (optional)"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-none border border-border bg-background text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-foreground/50"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <textarea
-                  placeholder="What would you like to explore? *"
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-none border border-border bg-background text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-foreground/50"
-                  required
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition-opacity"
-              >
-                Review trade
-                <ArrowUpRight className="h-4 w-4" />
-              </button>
-            </form>
+            <a
+              href="https://app.lokgi.com"
+              className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+            >
+              Open Trading Desk
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
