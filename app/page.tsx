@@ -7,7 +7,7 @@ import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
 import ContactSection from "@/components/contact-section"
 import Stats from "@/components/stats"
-import LatestArticles from "@/components/latest-articles"
+import MarketIndex from "@/components/market-index"
 import Footer from "@/components/footer"
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
       <Testimonials />
       <ContactSection />
       <Stats />
-      <LatestArticles />
+      <MarketIndex />
       <Footer />
     </main>
   )
