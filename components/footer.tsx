@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1500px] px-6 pt-20 md:px-10 md:pt-28">
         <Link
           href="/"
-          className="block overflow-hidden text-[clamp(5rem,18vw,17rem)] font-semibold leading-[0.78] tracking-[-0.09em] text-white transition-opacity hover:opacity-80"
+          className="block overflow-visible text-[clamp(5rem,18vw,17rem)] font-semibold leading-[0.86] tracking-[-0.09em] text-white transition-opacity hover:opacity-80"
         >
           <span className="flex items-center gap-4">
             <Image src="/images/logsi-mark.jpeg" alt="lokgi mark" width={160} height={160} className="h-[clamp(3rem,9vw,9rem)] w-[clamp(3rem,9vw,9rem)] rounded-2xl object-contain invert" />
