@@ -1,45 +1,31 @@
 import { ArrowUpRight } from "lucide-react"
-import { Icon } from "@iconify/react"
-import logos from "@iconify-json/logos/icons.json"
-import simpleIcons from "@iconify-json/simple-icons/icons.json"
-
-
 const companies = [
-  { name: "Apple", icon: "simple-icons:apple", color: "ffffff", tone: "bg-black" },
-  { name: "Amazon", icon: "simple-icons:amazon", color: "111111", tone: "bg-white" },
-  { name: "Disney", mark: "Disney", tone: "bg-black" },
-  { name: "Alphabet", icon: "logos:google-icon", tone: "bg-white" },
-  { name: "Tesla", icon: "simple-icons:tesla", color: "ffffff", tone: "bg-[#df0000]" },
-  { name: "Netflix", icon: "simple-icons:netflix", color: "e50914", tone: "bg-black" },
-  { name: "Microsoft", icon: "logos:microsoft-icon", tone: "bg-[#eef1f7]" },
-  { name: "NVIDIA", icon: "simple-icons:nvidia", color: "ffffff", tone: "bg-[#76b900]" },
-  { name: "BlackRock", mark: "BlackRock", tone: "bg-black" },
-  { name: "Pfizer", mark: "Pfizer", tone: "bg-[#0b06d8]" },
-  { name: "Market", icon: "simple-icons:tradingview", color: "ffffff", tone: "bg-black" },
-  { name: "Meta", icon: "logos:meta-icon", tone: "bg-[#e4edf3]" },
-  { name: "Coinbase", icon: "simple-icons:coinbase", color: "ffffff", tone: "bg-[#1652f0]" },
-  { name: "Arm", icon: "simple-icons:arm", color: "ffffff", tone: "bg-[#0795bd]" },
-  { name: "Visa", icon: "logos:visa", tone: "bg-[#1a36c7]" },
-  { name: "McDonald's", icon: "simple-icons:mcdonalds", color: "ffc72c", tone: "bg-[#da1e27]" },
-  { name: "PayPal", icon: "logos:paypal", tone: "bg-white" },
-  { name: "Bitcoin", icon: "logos:bitcoin", tone: "bg-[#f7931a]" },
-  { name: "Mastercard", icon: "logos:mastercard", tone: "bg-black" },
-  { name: "Stellar", icon: "simple-icons:stellar", color: "00d4ff", tone: "bg-black" },
-  { name: "Citi", mark: "Citi", tone: "bg-[#315bd8]" },
+  { name: "Apple", ticker: "AAPL", sector: "Technology", icon: "simple-icons:apple", color: "ffffff", tone: "bg-black" },
+  { name: "Microsoft", ticker: "MSFT", sector: "Technology", icon: "logos:microsoft-icon", tone: "bg-[#eef1f7]" },
+  { name: "NVIDIA", ticker: "NVDA", sector: "Technology", icon: "simple-icons:nvidia", color: "ffffff", tone: "bg-[#76b900]" },
+  { name: "Amazon", ticker: "AMZN", sector: "Consumer", icon: "simple-icons:amazon", color: "111111", tone: "bg-white" },
+  { name: "Alphabet", ticker: "GOOGL", sector: "Communication", icon: "logos:google-icon", tone: "bg-white" },
+  { name: "Meta Platforms", ticker: "META", sector: "Communication", icon: "logos:meta-icon", tone: "bg-[#e4edf3]" },
+  { name: "Tesla", ticker: "TSLA", sector: "Consumer", icon: "simple-icons:tesla", color: "ffffff", tone: "bg-[#df0000]" },
+  { name: "Broadcom", ticker: "AVGO", sector: "Technology", icon: "simple-icons:broadcom", color: "ffffff", tone: "bg-[#c8102e]" },
+  { name: "JPMorgan Chase", ticker: "JPM", sector: "Financials", mark: "JPM", tone: "bg-[#126bc5]" },
+  { name: "Visa", ticker: "V", sector: "Financials", icon: "logos:visa", tone: "bg-[#1a36c7]" },
+  { name: "Mastercard", ticker: "MA", sector: "Financials", icon: "logos:mastercard", tone: "bg-black" },
+  { name: "UnitedHealth", ticker: "UNH", sector: "Health care", mark: "UNH", tone: "bg-[#0b5b8e]" },
+  { name: "Johnson & Johnson", ticker: "JNJ", sector: "Health care", mark: "JNJ", tone: "bg-[#d71920]" },
+  { name: "Eli Lilly", ticker: "LLY", sector: "Health care", mark: "LLY", tone: "bg-[#d52b1e]" },
+  { name: "Exxon Mobil", ticker: "XOM", sector: "Energy", mark: "XOM", tone: "bg-[#ed1b2f]" },
+  { name: "Walmart", ticker: "WMT", sector: "Consumer", icon: "simple-icons:walmart", color: "ffffff", tone: "bg-[#0071ce]" },
+  { name: "Costco", ticker: "COST", sector: "Consumer", mark: "COST", tone: "bg-[#e31837]" },
+  { name: "Home Depot", ticker: "HD", sector: "Consumer", mark: "HD", tone: "bg-[#f96302]" },
+  { name: "Procter & Gamble", ticker: "PG", sector: "Consumer", mark: "PG", tone: "bg-[#003da5]" },
+  { name: "Coca-Cola", ticker: "KO", sector: "Consumer", icon: "simple-icons:cocacola", color: "ffffff", tone: "bg-[#f40009]" },
+  { name: "Netflix", ticker: "NFLX", sector: "Communication", icon: "simple-icons:netflix", color: "e50914", tone: "bg-black" },
 ]
 
-function getIcon(icon: string) {
-  const [prefix, name] = icon.split(":")
-  const collection = prefix === "logos" ? logos : simpleIcons
-  const data = collection.icons[name as keyof typeof collection.icons]
-  if (!data) return undefined
-  const iconData = data as { body: string; width?: number; height?: number }
-
-  return {
-    ...iconData,
-    width: iconData.width ?? collection.width,
-    height: iconData.height ?? collection.height,
-  }
+function getLogoUrl(symbol: string) {
+  const safeSymbol = symbol.replace(/[^a-zA-Z0-9]/g, "-")
+  return `https://assets.parqet.com/logos/symbol/${encodeURIComponent(safeSymbol)}`
 }
 
 export default function MarketIndex() {
@@ -55,27 +41,18 @@ export default function MarketIndex() {
 
             <div className="mt-12 grid grid-cols-4 gap-3 sm:grid-cols-7 sm:gap-5">
               {companies.map((company) => {
-                const icon = company.icon ? getIcon(company.icon) : undefined
                 return (
                   <div
                     key={company.name}
-                    title={company.name}
-                    className={`group flex aspect-square items-center justify-center overflow-hidden rounded-full border border-white/10 p-3 text-center transition-transform duration-300 hover:-translate-y-1 hover:scale-105 ${company.tone}`}
+                    aria-label={`${company.name} · ${company.ticker} · ${company.sector} · Token · Last close`}
+                    className={`group flex aspect-square items-center justify-center overflow-hidden rounded-full border border-white/10 p-0 text-center transition-transform duration-300 hover:-translate-y-1 hover:scale-105 ${company.tone}`}
                   >
-                    {icon ? (
-                      <Icon
-                        icon={icon}
-                        aria-label={`${company.name} logo`}
-                        width="72%"
-                        height="72%"
-                        style={{
-                          color: company.color ? `#${company.color}` : undefined,
-                          display: "block",
-                        }}
-                      />
-                    ) : (
-                      <span className="text-[clamp(.65rem,1.15vw,1rem)] font-bold leading-none tracking-[-0.06em]">{company.mark}</span>
-                    )}
+                    <img
+                      src={getLogoUrl(company.ticker)}
+                      alt={`${company.name} (${company.ticker}) logo`}
+                      loading="lazy"
+                      className="h-full w-full rounded-full object-contain"
+                    />
                   </div>
                 )
               })}
