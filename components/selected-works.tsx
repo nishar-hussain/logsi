@@ -12,12 +12,12 @@ const panels = [
   {
     title: "Wallet-authorized settlement",
     eyebrow: "SOLANA MAINNET · SUPPORTED CLAIMS",
-    body: "Connect a compatible Solana wallet and authorize supported buy or sell orders against the Lokgi mainnet USDC vault.",
+    body: "Connect a compatible Solana wallet and authorize supported buy or sell orders against the Lokgi USDC vault.",
   },
   {
     title: "Understand the claim",
     eyebrow: "NON-TRANSFERABLE · USDC VAULT · DISCLOSURES",
-    body: "Lokgi claims are not company shares. Review the vault structure, price source, transfer restrictions, fees, limits, and mainnet status before trading.",
+    body: "Lokgi claims are not company shares. Review the vault structure, price source, transfer restrictions, fees, limits, and demo status before trading.",
   },
 ]
 
@@ -30,10 +30,10 @@ export default function SelectedWorks() {
         <div className="mb-16 max-w-5xl">
           <div className="mb-5 flex items-center gap-2">
             <Briefcase className="h-5 w-5 text-accent" strokeWidth={2} />
-            <span className="text-sm font-medium uppercase tracking-[0.14em] text-foreground/70">US MARKET OVERVIEW</span>
+            <span className="text-sm font-medium uppercase tracking-[0.14em] text-foreground/70">MARKET EXPLORER · LAST OFFICIAL CLOSE</span>
           </div>
           <h2 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.05em] text-foreground md:text-7xl lg:text-8xl">
-            Discover the companies behind the market.
+            Explore US stocks with context.
           </h2>
         </div>
 

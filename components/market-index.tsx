@@ -44,23 +44,23 @@ function getIcon(icon: string) {
 
 export default function MarketIndex() {
   return (
-    <section id="market-index" className="bg-background px-6 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-black text-white shadow-[0_18px_60px_rgba(0,0,0,0.2)]">
+    <section id="market-index" className="bg-black px-6 py-12 text-white md:py-20">
+      <div className="mx-auto max-w-7xl overflow-hidden rounded-[1.5rem] border border-white/10 bg-black text-white">
         <div className="grid lg:grid-cols-2">
-          <div className="border-b border-white/25 p-8 md:p-12 lg:border-b-0 lg:border-r lg:p-14">
-            <p className="text-[clamp(4.5rem,10vw,8.5rem)] font-semibold leading-[0.8] tracking-[-0.09em]">700+</p>
-            <h2 className="mt-8 max-w-lg text-4xl font-medium leading-[0.98] tracking-[-0.06em] md:text-6xl">
-              stocks you know.
+          <div className="border-b border-white/15 p-7 md:p-10 lg:border-b-0 lg:border-r lg:p-12">
+            <p className="text-[clamp(4rem,9vw,7rem)] font-semibold leading-[0.8] tracking-[-0.1em]">100+</p>
+            <h2 className="mt-7 max-w-lg text-3xl font-medium leading-[0.98] tracking-[-0.06em] md:text-5xl">
+              familiar companies.<br />one clear view.
             </h2>
 
-            <div className="mt-16 grid grid-cols-4 gap-4 sm:grid-cols-7 sm:gap-6">
+            <div className="mt-12 grid grid-cols-4 gap-3 sm:grid-cols-7 sm:gap-5">
               {companies.map((company) => {
                 const icon = company.icon ? getIcon(company.icon) : undefined
                 return (
                   <div
                     key={company.name}
                     title={company.name}
-                    className={`flex aspect-square items-center justify-center overflow-hidden rounded-full border border-white/10 p-3 text-center ${company.tone}`}
+                    className={`group flex aspect-square items-center justify-center overflow-hidden rounded-full border border-white/10 p-3 text-center transition-transform duration-300 hover:-translate-y-1 hover:scale-105 ${company.tone}`}
                   >
                     {icon ? (
                       <Icon
@@ -99,20 +99,20 @@ export default function MarketIndex() {
               ))}
             </div>
             <div className="absolute right-8 top-0 h-3 w-14 rounded-b-full bg-white/80 md:right-14" />
-            <div className="relative z-10 flex h-full flex-col">
+            <div className="relative z-10 flex h-full flex-col p-1">
               <div className="flex items-start justify-between gap-6">
-                <h2 className="max-w-xl text-5xl font-semibold leading-[0.93] tracking-[-0.07em] md:text-7xl">
-                  One index<br />you can&apos;t get<br />anywhere else.
+                <h2 className="max-w-xl text-4xl font-semibold leading-[0.93] tracking-[-0.07em] md:text-6xl">
+                  One market<br />reference.<br />Built onchain.
                 </h2>
-                <span className="hidden whitespace-nowrap text-right text-xl font-semibold text-white/70 sm:block">S&amp;P Global</span>
+                <span className="hidden whitespace-nowrap text-right text-sm font-semibold uppercase tracking-[0.14em] text-white/50 sm:block">Lokgi<br />Markets</span>
               </div>
 
-              <div className="mt-auto max-w-xl pt-20">
-                <p className="text-lg leading-7 text-white/75 md:text-xl">
-                  The S&amp;P Digital Markets 50 Index brings public equities and digital assets together in one market reference for the onchain economy.
+              <div className="mt-auto max-w-xl pt-16">
+                <p className="text-base leading-7 text-white/65 md:text-lg">
+                  Explore US-listed companies, compare official closing prices, and discover which assets are available as supported claims on Solana.
                 </p>
-                <a href="#works" className="mt-8 inline-flex items-center gap-5 rounded-md bg-white px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-black transition-transform hover:-translate-y-1">
-                  Explore the market <ArrowUpRight size={18} />
+                <a href="#works" className="mt-7 inline-flex items-center gap-4 rounded-full bg-white px-5 py-3.5 text-xs font-bold uppercase tracking-[0.14em] text-black transition-transform hover:-translate-y-1">
+                  Explore market <ArrowUpRight size={16} />
                 </a>
               </div>
             </div>

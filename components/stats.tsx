@@ -3,11 +3,11 @@ import Link from "next/link"
 
 const stats = [
   { label: "Market reference", value: "US", note: "US-listed company context" },
-  { label: "Supported claims", value: "24", note: "Available on mainnet" },
+  { label: "Supported claims", value: "24", note: "Available on Solana" },
   { label: "Blockchain rail", value: "SOL", note: "Solana mainnet" },
-  { label: "Claim structure", value: "USDC", note: "Mainnet vault-backed and non-transferable" },
+  { label: "Claim structure", value: "USDC", note: "Vault-backed and non-transferable" },
   { label: "Price source", value: "Close", note: "Latest official regular-session close" },
-  { label: "Network status", value: "Mainnet", note: "Production environment" },
+  { label: "Network status", value: "Demo", note: "No real assets traded" },
 ]
 
 export default function Stats() {
@@ -23,8 +23,8 @@ export default function Stats() {
             <h2 className="text-4xl font-medium leading-[1.02] tracking-[-0.05em] md:text-6xl">Clear context for every supported asset.</h2>
             <p className="mt-6 max-w-xl text-base leading-7 text-white/60">Review stock references, claim structure, wallet requirements, price sources, and risk disclosures before you interact.</p>
           </div>
-          <Link href="#blog" className="inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/80">
-            Read the disclosures <ArrowUpRight size={16} />
+          <Link href="/risk-disclosure" className="inline-flex w-fit items-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-white/80">
+            Read the risk disclosure <ArrowUpRight size={16} />
           </Link>
         </div>
 

@@ -15,7 +15,7 @@ export default function Footer() {
             <span>lokgi</span>
           </span>
         </Link>
-        <p className="mt-6 max-w-md text-sm leading-6 text-white/60">lokgi is a US equity reference desk on Solana mainnet for exploring US-listed companies and trading non-transferable claims against a USDC vault at the latest official close.</p>
+        <p className="mt-6 max-w-md text-sm leading-6 text-white/60">Lokgi is a Solana-based US equity reference desk for exploring US-listed companies and trading frozen, non-transferable claims against a USDC vault at the latest official close.</p>
 
         <div className="mt-16 flex flex-col gap-6 border-t border-white/20 py-7 text-sm text-white/65 md:mt-24 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -25,7 +25,7 @@ export default function Footer() {
             <Link href="/risk-disclosure" className="transition-colors hover:text-white">Risk Disclosure</Link>
           </div>
 
-          <p className="max-w-2xl text-xs leading-5 text-white/45">lokgi is not a brokerage or exchange. Its claims are against a Solana mainnet USDC vault, not shares in US companies. Market reference prices do not guarantee executable sale prices.</p>
+          <p className="max-w-2xl text-xs leading-5 text-white/45">Lokgi is an educational demo platform, not a brokerage or investment service. Its claims are against a USDC vault, not shares in US companies. Demo orders do not execute real trades. Read the Terms and Risk Disclosure before using the platform.</p>
 
           <div className="flex items-center gap-6 text-white/75">
             <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="lokgi on X" className="text-xl transition-colors hover:text-white">𝕏</a>

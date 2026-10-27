@@ -29,19 +29,17 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
           {/* Product introduction */}
           <div className="lg:max-w-3xl pt-0">
-            <p className="mb-5 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">US EQUITY MARKETS. ONCHAIN SETTLEMENT.</p>
+            <p className="mb-5 text-sm font-medium uppercase tracking-[0.14em] text-foreground/60">US MARKETS. ONCHAIN SETTLEMENT.</p>
             <h1 className="leading-tight text-balance text-left font-sans font-semibold leading-7 tracking-tight text-accent text-5xl">
-              Explore US Stocks. Trade Onchain.
+              Discover US Stocks, Trade on Solana.
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-foreground/70">
-              Discover leading US companies, explore stock-market prices, and experience onchain trading through Lokgi. Buy and sell stock-price-linked claims against a USDC vault on Solana mainnet, with wallet-authorized transactions and verifiable settlement.
+              Explore leading US companies and their official market prices, then buy or sell Solana-based claims linked to those stocks. Every trade is wallet-authorized and settled onchain with transparent pricing.
             </p>
 
             <a
-              href="https://app.lokgi.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#works"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-accent-foreground hover:opacity-90 transition-opacity"
             >
               Explore Markets
@@ -74,7 +72,7 @@ export default function Hero() {
         >
           <Image
             src="/images/97ab9037-5842-4584-bc95-9fc90baece99.png"
-            alt="Lokgi US stock market dashboard on Solana mainnet"
+            alt="Lokgi dark-mode US stock market dashboard with charts and tickers"
             width={1920}
             height={600}
             className="w-full h-auto object-cover"

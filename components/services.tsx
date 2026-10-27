@@ -40,10 +40,10 @@ export default function Services() {
               <span className="text-sm font-medium text-foreground/70">FROM MARKET DATA TO SETTLEMENT</span>
             </div>
 
-            <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">Every trade has a verifiable flow.</h2>
+            <h2 className="text-3xl font-serif text-foreground mb-6 md:text-5xl">From market data to onchain trades.</h2>
 
             <p className="text-foreground/70 max-w-lg">
-              Lokgi combines server-prepared prices, wallet authorization, and Solana mainnet settlement to execute supported buy and sell orders.
+              Lokgi bridges traditional US markets with blockchain execution. Discover companies, inspect stock information, and trade supported claims in one place.
             </p>
 
             <Link
